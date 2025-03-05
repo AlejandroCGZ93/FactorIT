@@ -1,0 +1,133 @@
+.cart-selection-page {
+  padding: 2rem 0;
+}
+
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.cart-types-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .cart-types-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cart-type-card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  height: 100%;
+}
+
+.cart-type-card:hover:not(.disabled) {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cart-type-card.disabled {
+  opacity: 0.7;
+}
+
+.cart-type-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: white;
+}
+
+.cart-type-icon.normal {
+  background-color: var(--primary-color);
+}
+
+.cart-type-icon.promotional {
+  background-color: var(--accent-color);
+}
+
+.cart-type-icon.vip {
+  background-color: var(--secondary-color);
+}
+
+.cart-type-card h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.cart-type-card p {
+  color: var(--dark-gray);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.cart-type-features {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cart-type-features li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.cart-type-status {
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.cart-type-status.available {
+  background-color: rgba(56, 176, 0, 0.1);
+  color: var(--success-color);
+}
+
+.cart-type-status.unavailable {
+  background-color: rgba(208, 0, 0, 0.1);
+  color: var(--error-color);
+}
+
+.select-cart-btn {
+  margin-top: auto;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.select-cart-btn:hover:not(:disabled) {
+  background-color: #2a75e6;
+}
+
+.select-cart-btn:disabled {
+  background-color: var(--medium-gray);
+  cursor: not-allowed;
+}

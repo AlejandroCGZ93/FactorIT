@@ -1,0 +1,118 @@
+.cart-summary {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+}
+
+.summary-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.cart-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.cart-type-label {
+  font-weight: 600;
+}
+
+.cart-type-value {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.cart-type-value.normal {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+.cart-type-value.promotional {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.cart-type-value.vip {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.summary-row.discount {
+  color: var(--success-color);
+  font-weight: 600;
+}
+
+.summary-row.total {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--light-gray);
+}
+
+.complete-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--success-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.complete-btn:hover:not(:disabled) {
+  background-color: #2d9900;
+}
+
+.clear-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: transparent;
+  color: var(--error-color);
+  border: 1px solid var(--error-color);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  margin-top: 0.75rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.clear-btn:hover:not(:disabled) {
+  background-color: var(--error-color);
+  color: white;
+}
+
+.complete-btn:disabled,
+.clear-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.empty-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: var(--medium-gray);
+  font-style: italic;
+}

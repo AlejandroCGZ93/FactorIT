@@ -1,0 +1,172 @@
+.date-simulator-page {
+  padding: 2rem 0;
+}
+
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.date-simulator-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .date-simulator-container {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+.date-simulator-card,
+.promotional-dates-card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+}
+
+.date-simulator-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.date-simulator-card h2,
+.promotional-dates-card h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.date-simulator-card p,
+.promotional-dates-card p {
+  color: var(--dark-gray);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.date-input-container {
+  margin-bottom: 1.5rem;
+}
+
+.date-input-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.date-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--medium-gray);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+.date-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.simulate-btn,
+.reset-btn {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.simulate-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+}
+
+.simulate-btn:hover {
+  background-color: #2a75e6;
+}
+
+.reset-btn {
+  background-color: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--medium-gray);
+}
+
+.reset-btn:hover {
+  background-color: var(--light-gray);
+}
+
+.current-date-display {
+  background-color: var(--light-gray);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.current-date-display h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.simulated-date {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.date-status {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.date-status.promotional {
+  background-color: rgba(251, 86, 7, 0.1);
+  color: var(--accent-color);
+}
+
+.date-status.normal {
+  background-color: rgba(173, 181, 189, 0.1);
+  color: var(--dark-gray);
+}
+
+.promotional-dates-list {
+  list-style: none;
+}
+
+.promotional-date-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.promotional-date-item:last-child {
+  border-bottom: none;
+}
+
+.promotional-date-name {
+  font-weight: 600;
+}
+
+.promotional-date-value {
+  color: var(--accent-color);
+  font-weight: 600;
+}

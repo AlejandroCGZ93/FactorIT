@@ -1,0 +1,31 @@
+.user-profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #f0f0f0;
+
+}
+
+.container {
+  text-align: center;
+}
+
+.user-profile-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+}
+
+.user-profile-card h2 {
+  margin-bottom: 1rem;
+}
+
+.user-profile-card p {
+  margin: 0.5rem 0;
+}
